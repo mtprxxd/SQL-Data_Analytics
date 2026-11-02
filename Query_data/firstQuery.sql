@@ -15,7 +15,7 @@ SELECT
 FROM customers
 
 ----SELECT-------------FROM-------------WHERE-----use before GROUP BY------------------------------------------
---WHERE is used to filter the data based ont he conditions.
+--WHERE is used to filter the data based on the conditions.
 --TASK 2--Retrieve all the data that must be >=500.
 SELECT *
 FROM customers
@@ -37,7 +37,7 @@ SELECT*
 FROM customers
 ORDER BY 
 	country ASC, score DESC
----------------------------------------GROUP BY----To aggregate the data Or group the multiple rows in one---------------------
+---------------------------------------GROUP BY----To aggregate the data Or group the same multiple data in single row
 --TASK 4-------Find the total score for each country-----------------------------------
 SELECT
 country,
@@ -98,6 +98,14 @@ ORDER BY score DESC
 SELECT TOP 2*
 FROM orders
 ORDER BY order_date DESC
+
+--# Static Values: Adding columns to the table in exist DB.
+SELECT
+id,
+first_name,
+'Active' AS Emp_status,
+2026 AS Curr_year
+FROM customers
 
 
 
