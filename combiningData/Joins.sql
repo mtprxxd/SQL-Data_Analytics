@@ -108,3 +108,15 @@ WHERE c.id IS NOT NULL
 	AND o.customer_id IS NOT NULL;
 
 
+------------------------CROSS JOIN-----------------------------------------------------------
+
+--TASK 6--Generate all the combinations of customers and orders
+SELECT*
+FROM customers
+CROSS JOIN orders;
+
+
+
+
+
+
