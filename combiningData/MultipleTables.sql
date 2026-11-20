@@ -13,7 +13,19 @@ SELECT*
 FROM Sales.Employees
 
 SELECT
-FROM Sales.Orders
-LEFT JOIN 
+o.OrderID,
+c.FirstName AS CustomerName,
+o.Sales,
+p.Product,
+p.Price,
+e.FirstName AS EmployeeName
+FROM Sales.Orders AS o
+LEFT JOIN Sales.Customers AS c 
+ON o.OrderID = c.CustomerID
+LEFT JOIN Sales.Products AS p
+ON o.ProductID = p.ProductID
+LEFT JOIN Sales.Employees AS e
+ON o.SalesPersonID = e.EmployeeID
+
 
 
