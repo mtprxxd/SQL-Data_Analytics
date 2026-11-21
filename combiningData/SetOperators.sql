@@ -61,7 +61,7 @@ FROM Sales.Customers
 -------------------------------OPTIMISED WAYS--------------------------------------------------
 -----Orders are stored in separate tables (Orders and OrderArchieve).Combine all orders into a report without Duplicates.
 SELECT
-'Orders' AS SourceTable, 
+'Orders' AS SourceTable,
 [OrderID]
       ,[ProductID]
       ,[CustomerID]
